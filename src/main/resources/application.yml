@@ -1,6 +1,7 @@
 server:
   port: 58081
-
+  servlet:
+    context-path: "/data-control-manager"
 spring:
   application:
     name: teros-data-control-manager
@@ -14,11 +15,7 @@ management:
     web:
       exposure:
         include: "*"
-eureka:
-  client:
-    registryFetchIntervalSeconds: 5
-    enabled: true
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://10.10.2.102:8761/eureka}
-  instance:
-    preferIpAddress: true
+# extra option
+extra:
+  env:
+    teros_home: e:/teros_home
