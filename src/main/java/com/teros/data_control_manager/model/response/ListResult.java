@@ -1,4 +1,4 @@
-package com.teros.api_control_manager.model.response;
+package com.teros.data_control_manager.model.response;
 
 import lombok.Getter;
 import lombok.Setter;

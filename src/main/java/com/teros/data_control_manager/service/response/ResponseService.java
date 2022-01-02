@@ -1,8 +1,8 @@
-package com.teros.api_control_manager.service.response;
+package com.teros.data_control_manager.service.response;
 
-import com.teros.api_control_manager.model.response.CommonResult;
-import com.teros.api_control_manager.model.response.ListResult;
-import com.teros.api_control_manager.model.response.SingleResult;
+import com.teros.data_control_manager.model.response.CommonResult;
+import com.teros.data_control_manager.model.response.ListResult;
+import com.teros.data_control_manager.model.response.SingleResult;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

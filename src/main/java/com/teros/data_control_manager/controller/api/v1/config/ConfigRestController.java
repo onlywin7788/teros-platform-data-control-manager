@@ -1,7 +1,7 @@
-package com.teros.api_control_manager.controller.api.v1.config;
+package com.teros.data_control_manager.controller.api.v1.config;
 
-import com.teros.api_control_manager.model.response.CommonResult;
-import com.teros.api_control_manager.service.response.ResponseService;
+import com.teros.data_control_manager.model.response.CommonResult;
+import com.teros.data_control_manager.service.response.ResponseService;
 import com.teros.ext.common.file.CommonFile;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Value;

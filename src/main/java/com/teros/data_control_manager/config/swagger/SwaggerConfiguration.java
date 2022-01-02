@@ -1,4 +1,4 @@
-package com.teros.api_control_manager.config.swagger;
+package com.teros.data_control_manager.config.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-// connect => http://ip:port/api-control-manager/swagger-ui.html
+// connect => http://ip:port/data-control-manager/swagger-ui.html
 
 @Configuration
 @EnableSwagger2
@@ -18,7 +18,7 @@ public class SwaggerConfiguration {
     @Bean
     public Docket swaggerApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(swaggerInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("com.teros.api_control_manager.controller.api.v1"))
+                .apis(RequestHandlerSelectors.basePackage("com.teros.data_control_manager.controller.api.v1"))
                 .paths(PathSelectors.any())
                 .build()
                 .useDefaultResponseMessages(false); // 기본으로 세팅되는 200,401,403,404 메시지를 표시 하지 않음

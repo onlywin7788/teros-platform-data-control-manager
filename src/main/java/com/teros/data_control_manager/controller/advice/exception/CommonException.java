@@ -1,4 +1,4 @@
-package com.teros.api_control_manager.controller.advice.exception;
+package com.teros.data_control_manager.controller.advice.exception;
 
 public class CommonException extends RuntimeException {
     public CommonException(String msg, Throwable t) {
